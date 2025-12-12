@@ -1,0 +1,58 @@
+# ---------------------------
+# Mason Brick Repository
+# ---------------------------
+
+# Mason cache & generated files
+.mason/
+mason_cache/
+.bricks.json
+.mason_packages/
+
+# Build artifacts
+build/
+.dart_tool/
+.packages
+
+# Logs
+*.log
+
+# OS / Editor junk
+.DS_Store
+Thumbs.db
+
+# IDE settings
+# VSCode
+.vscode/
+# IntelliJ / Android Studio
+.idea/
+*.iml
+
+# Dependency directories
+pubspec.lock # optional: exclude if this is a reusable brick
+packages/
+
+# Node modules (if your brick includes JS tooling)
+node_modules/
+
+# Flutter / Dart extras
+.flutter-plugins
+.flutter-plugins-dependencies
+.dart_tool/
+flutter_export_environment.sh
+
+# Coverage
+coverage/
+lcov.info
+
+# Temporary files
+*.tmp
+*.temp
+
+# Archive files
+*.zip
+*.tar.gz
+*.tar
+*.tgz
+
+# Generated outputs from templates (if testing bricks)
+test_outputs/
