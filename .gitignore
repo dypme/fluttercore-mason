@@ -56,3 +56,4 @@ lcov.info
 
 # Generated outputs from templates (if testing bricks)
 test_outputs/
+example/mason-lock.json
