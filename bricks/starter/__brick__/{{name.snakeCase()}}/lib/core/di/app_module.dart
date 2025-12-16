@@ -1,3 +1,4 @@
+import 'package:awesome_dio_interceptor/awesome_dio_interceptor.dart';
 import 'package:flutter_core/core.dart';
 import 'package:flutter_core/data/core_session.dart';
 import 'package:{{name.snakeCase()}}/core/config/config.dart';
@@ -20,6 +21,7 @@ class AppModule {
         ),
       );
       dio.interceptors.add(ApiTokenInterceptor());
+      dio.interceptors.add(AwesomeDioInterceptor());
       return dio;
     }, fenix: true);
     Get.lazyPut(() => ApiService(Get.find()), fenix: true);
