@@ -128,28 +128,34 @@ Mason will prompt you interactively for all required variables, such as project 
 
 This project includes an `.fvmrc` file.
 
-It is **highly recommended** to use **FVM (Flutter Version Management)** to ensure the Flutter SDK version matches the project configuration and to minimize environment‑related issues.
+To minimize environment issues and ensure everyone uses the **same Flutter SDK version**, it is **highly recommended** to use **FVM (Flutter Version Management)**.
 
-If you haven’t installed FVM:
+👉 Please follow the official FVM installation guide:
 
-```sh
-dart pub global activate fvm
-```
+[https://fvm.app/documentation/getting-started/installation](https://fvm.app/documentation/getting-started/installation)
 
-Then run:
+---
 
-```sh
-fvm install
-fvm flutter pub get
-```
+### 6️⃣ Activate Flutter Version
 
-Next go to generated project folder and run:
+After installing FVM, navigate to the **generated project directory**, then run:
 
 ```sh
 fvm use
 ```
 
-This ensures everyone on the project uses the same Flutter version.
+This command will:
+
+* Download the required Flutter version (if not installed)
+* Activate it for the project based on `.fvmrc`
+
+After that, you can continue as usual:
+
+```sh
+fvm flutter pub get
+```
+
+This ensures a consistent Flutter environment across all developers.
 
 ---
 
