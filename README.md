@@ -105,7 +105,7 @@ This will create a `mason.yaml` file if it doesn’t exist yet.
 ### 3️⃣ Add fluttercore Brick
 
 ```sh
-mason add fluttercore \
+mason add starter \
   --git-url https://github.com/dypme/fluttercore-mason.git \
   --git-path bricks/starter
 ```
@@ -117,7 +117,7 @@ mason add fluttercore \
 Run the following command:
 
 ```sh
-mason make fluttercore
+mason make starter
 ```
 
 Mason will prompt you interactively for all required variables, such as project name and package identifier.
@@ -141,6 +141,12 @@ Then run:
 ```sh
 fvm install
 fvm flutter pub get
+```
+
+Next go to generated project folder and run:
+
+```sh
+fvm use
 ```
 
 This ensures everyone on the project uses the same Flutter version.
