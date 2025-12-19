@@ -1,4 +1,4 @@
-package com.example.{{name.snakeCase()}}
+package {{packageName}}
 
 import io.flutter.embedding.android.FlutterActivity
 
